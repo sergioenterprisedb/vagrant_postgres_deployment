@@ -1,0 +1,59 @@
+---
+# https://github.com/EnterpriseDB/edb-ansible/tree/master/roles/manage_dbserver#how-to-include-the-manage_dbserver-role-in-your-playbook
+
+- hosts: primary,standby
+  name: Update pg_hba.conf
+  become: yes
+  gather_facts: yes
+  any_errors_fatal: True
+  max_fail_percentage: 0
+
+  collections:
+    - edb_devops.edb_postgres
+
+  pre_tasks:
+    - name: Initialize the user defined variables
+      set_fact:
+        pg_version: 14
+        pg_type: "EPAS"
+
+        pg_hba_ip_addresses:
+          - contype: "host"
+            users: "all"
+            databases: "all"
+            method: "trust"
+            source: "127.0.0.1/32"
+            state: present
+
+  roles:
+    - manage_dbserver
+
+- hosts: primary
+  name: Create user sergio
+  become: yes
+  gather_facts: yes
+  any_errors_fatal: True
+  max_fail_percentage: 0
+
+  collections:
+    - edb_devops.edb_postgres
+
+  pre_tasks:
+    - name: Initialize the user defined variables
+      set_fact:
+        pg_version: 14
+        pg_type: "EPAS"
+
+        pg_users:
+          - name: sergio
+            password: sergio
+            role_attr_flags: "SUPERUSER,LOGIN"
+
+  roles:
+    - manage_dbserver
+
+  tasks:
+    - name: other scripts
+      ansible.builtin.shell: /vagrant_software/custom.sh 
+  #       cmd: ls -l | grep log
+  #       chdir: somedir/
