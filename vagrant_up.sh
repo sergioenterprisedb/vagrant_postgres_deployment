@@ -48,7 +48,7 @@ if [ "${REF_ARCHITECTURE}" != "EDB-RA-1" ] && [ "${REF_ARCHITECTURE}" != "EDB-RA
 else
   if [ "${REF_ARCHITECTURE}" == "EDB-RA-1" ]; then
     vagrant up pg1
-    vagrant up pg2 &
+    #vagrant up pg2 &
     vagrant up pem1 &
     vagrant up backup1 
   elif [ "${REF_ARCHITECTURE}" == "EDB-RA-2" ]; then
