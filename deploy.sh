@@ -5,7 +5,7 @@ usage() {
 
 Usage: deploy_test.sh -a [reference architecture] -t [PostgreSQL type] -v [version] -p [project name] 
 Ex:  
-./deploy_test.sh -a EDB-RA-2 -t EPAS -v 14 -p test
+./deploy.sh -a EDB-RA-2 -t EPAS -v 14 -p test
 
 Parameters:
    -a: EDB-RA-1, EDB-RA-2, EDB-RA-3
