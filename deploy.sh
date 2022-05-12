@@ -3,7 +3,7 @@
 usage() {
   cat << EOF
 
-Usage: deploy_test.sh -a [reference architecture] -t [PostgreSQL type] -v [version] -p [project name] 
+Usage: deploy.sh -a [reference architecture] -t [PostgreSQL type] -v [version] -p [project name] 
 Ex:  
 ./deploy.sh -a EDB-RA-2 -t EPAS -v 14 -p test
 
