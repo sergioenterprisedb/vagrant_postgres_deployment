@@ -54,7 +54,7 @@ while getopts "h:a:t:v:p:" optname; do
 done
 
 if [ "${REF_ARCHITECTURE}" != "EDB-RA-1" ] && [ "${REF_ARCHITECTURE}" != "EDB-RA-2" ] && [ "${REF_ARCHITECTURE}" != "EDB-RA-3" ]; then
-  echo "Version not equal to EDB-RA1, EDB-RA-2 or EDB-RA-3"
+  echo "Architecture not equal to EDB-RA-1, EDB-RA-2 or EDB-RA-3"
   usage
   exit 1;
 else
@@ -86,19 +86,24 @@ if [ -z "${PROJECT_NAME}" ]; then
 fi
 
 if [ -z "${user}" ]; then
+  echo ""
   echo "Export user variable with EDB Repo user. Ex:"
   echo "export user=<user_name>"
-  usage
+  echo ""
+  #usage
   exit 1;
 fi
 
 if [ -z "${password}" ]; then
+  echo ""
   echo "Export password variable with EDB Repo password. Ex:"
   echo "export password=<password>"
-  usage
+  echo ""
+  #usage
   exit 1;
 fi
 
+start=$SECONDS
 . ./scripts/delete_ssh_local_keys.sh
 . ./scripts/add_ssh_local_keys.sh
 
@@ -116,4 +121,10 @@ edb-deployment baremetal deploy -P ${PWD}/custom_config.yaml ${PROJECT_NAME}
 edb-deployment baremetal passwords test
 # Redeploy without rebuild all platform
 #edb-deployment baremetal deploy -P ${PWD}/custom_config.yaml -S -n ${PROJECT_NAME}
+
+end=$SECONDS
+echo "****************************"
+echo "*** Deployment finished. ***"
+echo "****************************"
+echo "Duration: $((end-start)) seconds."
 

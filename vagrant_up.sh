@@ -8,6 +8,9 @@ Usage: vagrant_up.sh -a [reference architecture]
 Parameters:
    -a: EDB-RA-1, EDB-RA-2, EDB-RA-3
 
+Architectures:
+   https://github.com/EnterpriseDB/edb-ref-archs/blob/main/edb-reference-architecture-codes/README.md
+
 EOF
 }
 
@@ -48,7 +51,6 @@ if [ "${REF_ARCHITECTURE}" != "EDB-RA-1" ] && [ "${REF_ARCHITECTURE}" != "EDB-RA
 else
   if [ "${REF_ARCHITECTURE}" == "EDB-RA-1" ]; then
     vagrant up pg1
-    #vagrant up pg2 &
     vagrant up pem1 &
     vagrant up backup1 
   elif [ "${REF_ARCHITECTURE}" == "EDB-RA-2" ]; then
@@ -63,9 +65,9 @@ else
     vagrant up pg2 &
     vagrant up pg3 &
     vagrant up backup1 &
-    vagrant up pooler-1 &
-    vagrant up pooler-2 &
-    vagrant up pooler-3 
+    vagrant up pooler1 &
+    vagrant up pooler2 &
+    vagrant up pooler3 
   fi
 fi
 
