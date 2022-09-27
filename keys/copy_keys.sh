@@ -1,4 +1,4 @@
+#!/bin/bash
 cat /vagrant_keys/public_key.txt >> ./.ssh/authorized_keys
-cat > /home/vagrant/.ssh/config <<EOF
-EOF
- 
+test -f /home/vagrant/.ssh/config && rm /home/vagrant/.ssh/config
+touch /home/vagrant/.ssh/config

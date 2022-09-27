@@ -47,12 +47,12 @@ To deploy reference architectures use this command:
 Ex:
 ./deploy.sh -a EDB-RA-2 -t EPAS -v 14 -p test
 ...
-Creating project directory /Users/sergio.romera/.edb-deployment/baremetal/test ... ok
+Creating project directory /Users/ToontjeM/.edb-deployment/baremetal/test ... ok
 Loading Cloud specifications ... ok
-Copying SSH key pair into /Users/sergio.romera/.edb-deployment/baremetal/test ... ok
-Building Ansible vars file /Users/sergio.romera/.edb-deployment/baremetal/test/ansible_vars.json ... ok
-Copying Ansible playbook file into /Users/sergio.romera/.edb-deployment/baremetal/test/playbook.yml ... ok
-Build Ansible inventory file /Users/sergio.romera/.edb-deployment/baremetal/test/inventory.yml ... ok
+Copying SSH key pair into /Users/ToontjeM/.edb-deployment/baremetal/test ... ok
+Building Ansible vars file /Users/ToontjeM/.edb-deployment/baremetal/test/ansible_vars.json ... ok
+Copying Ansible playbook file into /Users/ToontjeM/.edb-deployment/baremetal/test/playbook.yml ... ok
+Build Ansible inventory file /Users/ToontjeM/.edb-deployment/baremetal/test/inventory.yml ... ok
 Installing Ansible collection edb_devops.edb_postgres:>=3.10.0,<4.0.0 ... ok
 Deploying components with Ansible ... ok
 Extracting data from the inventory file ... ok

@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant_keys":{"guestpath":"/vagrant_keys","hostpath":"/Users/ton.machielsen/vagrant_postgres_deployment/keys","disabled":false,"__vagrantfile":true},"/vagrant_software":{"guestpath":"/vagrant_software","hostpath":"/Users/ton.machielsen/vagrant_postgres_deployment/software","disabled":false,"__vagrantfile":true}}}
