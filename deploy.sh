@@ -19,6 +19,8 @@ EOF
 # *** MAIN ***
 # ************
 
+test -f ~/.edb_repo_user && source ~/.edb_repo_user
+
 if [ "$#" -eq 0 ]; then
   usage;
   exit 1;
