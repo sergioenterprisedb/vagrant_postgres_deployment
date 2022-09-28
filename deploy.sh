@@ -111,7 +111,7 @@ start=$SECONDS
 
 # Deploy test project
 edb-deployment baremetal remove ${PROJECT_NAME}
-edb-deployment baremetal configure -K ./.vagrant/machines/pg1/virtualbox/private_key \
+edb-deployment baremetal configure -K ./.vagrant/machines/pg1/vmware_desktop/private_key \
                                    -a ${REF_ARCHITECTURE} \
                                    -u "${user}:${password}" \
                                    -t ${PG_TYPE} \
