@@ -4,42 +4,42 @@
   "pg_wal": null,
   "postgres_server_1": {
     "name": "pg1",
-    "public_ip": "192.168.56.11",
-    "private_ip": "192.168.56.11"
+    "public_ip": "192.168.192.11",
+    "private_ip": "192.168.192.11"
   },
   "postgres_server_2": {
     "name": "pg2",
-    "public_ip": "192.168.56.12",
-    "private_ip": "192.168.56.12"
+    "public_ip": "192.168.192.12",
+    "private_ip": "192.168.192.12"
   },
   "postgres_server_3": {
     "name": "pg3",
-    "public_ip": "192.168.56.13",
-    "private_ip": "192.168.56.13"
+    "public_ip": "192.168.192.13",
+    "private_ip": "192.168.192.13"
   },
   "pooler_server_1": {
     "name": "pooler1",
-    "public_ip": "192.168.56.21",
-    "private_ip": "192.168.56.21"
+    "public_ip": "192.168.192.21",
+    "private_ip": "192.168.192.21"
   },
   "pooler_server_2": {
     "name": "pooler2",
-    "public_ip": "192.168.56.22",
-    "private_ip": "192.168.56.22"
+    "public_ip": "192.168.192.22",
+    "private_ip": "192.168.192.22"
   },
   "pooler_server_3": {
     "name": "pooler3",
-    "public_ip": "192.168.56.23",
-    "private_ip": "192.168.56.23"
+    "public_ip": "192.168.192.23",
+    "private_ip": "192.168.192.23"
   },
   "pem_server_1": {
     "name": "pem1",
-    "public_ip": "192.168.56.10",
-    "private_ip": "192.168.56.10"
+    "public_ip": "192.168.192.10",
+    "private_ip": "192.168.192.10"
   },
   "backup_server_1": {
     "name": "backup1",
-    "public_ip": "192.168.56.14",
-    "private_ip": "192.168.56.14"
+    "public_ip": "192.168.192.14",
+    "private_ip": "192.168.192.14"
   }
 }

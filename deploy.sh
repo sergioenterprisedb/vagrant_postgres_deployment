@@ -120,7 +120,7 @@ edb-deployment baremetal configure -K ./.vagrant/machines/pg1/vmware_desktop/pri
                                    ${PROJECT_NAME}
 PWD=$(pwd)
 edb-deployment baremetal deploy -P ${PWD}/custom_config.yaml ${PROJECT_NAME}
-edb-deployment baremetal passwords test
+edb-deployment baremetal passwords ${PROJECT_NAME}
 # Redeploy without rebuild all platform
 #edb-deployment baremetal deploy -P ${PWD}/custom_config.yaml -S -n ${PROJECT_NAME}
 

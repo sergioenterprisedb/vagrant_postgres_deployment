@@ -4,17 +4,17 @@
   "pg_wal": null,
   "postgres_server_1": {
     "name": "pg1",
-    "public_ip": "192.168.56.11",
-    "private_ip": "192.168.56.11"
+    "public_ip": "192.168.192.11",
+    "private_ip": "192.168.192.11"
   },
   "pem_server_1": {
     "name": "pem1",
-    "public_ip": "192.168.56.10",
-    "private_ip": "192.168.56.10"
+    "public_ip": "192.168.192.10",
+    "private_ip": "192.168.192.10"
   },
   "backup_server_1": {
     "name": "backup1",
-    "public_ip": "192.168.56.14",
-    "private_ip": "192.168.56.14"
+    "public_ip": "192.168.192.14",
+    "private_ip": "192.168.192.14"
   }
 }
