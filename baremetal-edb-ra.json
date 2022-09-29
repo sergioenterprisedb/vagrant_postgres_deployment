@@ -7,31 +7,6 @@
     "public_ip": "192.168.56.11",
     "private_ip": "192.168.56.11"
   },
-  "postgres_server_2": {
-    "name": "pg2",
-    "public_ip": "192.168.56.12",
-    "private_ip": "192.168.56.12"
-  },
-  "postgres_server_3": {
-    "name": "pg3",
-    "public_ip": "192.168.56.13",
-    "private_ip": "192.168.56.13"
-  },
-  "pooler_server_1": {
-    "name": "pooler1",
-    "public_ip": "192.168.56.21",
-    "private_ip": "192.168.56.21"
-  },
-  "pooler_server_2": {
-    "name": "pooler2",
-    "public_ip": "192.168.56.22",
-    "private_ip": "192.168.56.22"
-  },
-  "pooler_server_3": {
-    "name": "pooler3",
-    "public_ip": "192.168.56.23",
-    "private_ip": "192.168.56.23"
-  },
   "pem_server_1": {
     "name": "pem1",
     "public_ip": "192.168.56.10",
