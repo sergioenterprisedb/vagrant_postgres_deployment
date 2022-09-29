@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
     primary.vm.provider "virtualbox" do |vmp|
       vmp.memory = "1024"
       vmp.cpus = "1"
-      vmp.name = "vm_pg1"
+      vmp.name = "pg1"
     end
     primary.vm.synced_folder "./keys", "/vagrant_keys"
     primary.vm.synced_folder "./software", "/vagrant_software"
@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
     witness_pem.vm.provider "virtualbox" do |vmw|
       vmw.memory = "1024"
       vmw.cpus = "1"
-      vmw.name = "vm_pem1"
+      vmw.name = "pem1"
     end
     witness_pem.vm.synced_folder "./keys", "/vagrant_keys"
     witness_pem.vm.synced_folder "./software", "/vagrant_software"
@@ -42,7 +42,7 @@ Vagrant.configure("2") do |config|
        standby.vm.provider "virtualbox" do |v|
          v.memory = "1024"
          v.cpus = "1"
-         v.name = "vm_pg#{i}"
+         v.name = "pg#{i}"
        end
        standby.vm.synced_folder "./keys", "/vagrant_keys"
        standby.vm.synced_folder "./software", "/vagrant_software"
@@ -57,7 +57,7 @@ Vagrant.configure("2") do |config|
     backup.vm.provider "virtualbox" do |vms2|
       vms2.memory = "512"
       vms2.cpus = "1"
-      vms2.name = "vm_backup1"
+      vms2.name = "backup1"
     end
     backup.vm.synced_folder "./keys", "/vagrant_keys"
     backup.vm.synced_folder "./software", "/vagrant_software"
@@ -72,7 +72,7 @@ Vagrant.configure("2") do |config|
       pooler.vm.provider "virtualbox" do |v|
         v.memory = "512"
         v.cpus = "1"
-        v.name = "vm_pooler#{i}"
+        v.name = "pooler#{i}"
       end
       pooler.vm.synced_folder "./keys", "/vagrant_keys"
       pooler.vm.synced_folder "./software", "/vagrant_software"
