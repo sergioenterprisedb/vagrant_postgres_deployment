@@ -45,7 +45,7 @@ done
 
 start=$SECONDS
 if [ "${REF_ARCHITECTURE}" != "EDB-RA-1" ] && [ "${REF_ARCHITECTURE}" != "EDB-RA-2" ] && [ "${REF_ARCHITECTURE}" != "EDB-RA-3" ]; then
-  echo "Version not equal to EDB-RA1, EDB-RA-2 or EDB-RA-3"
+  echo "Version not equal to EDB-RA-1, EDB-RA-2 or EDB-RA-3"
   usage
   exit 1;
 else
