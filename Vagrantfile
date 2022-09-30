@@ -4,7 +4,6 @@
 var_box = "generic/rocky8"
 
 Vagrant.configure("2") do |config|
-
   config.vm.define "pg1" do |primary|
     primary.vm.box = var_box
     primary.vm.hostname= "pg1"
