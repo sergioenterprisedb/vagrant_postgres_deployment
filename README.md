@@ -10,7 +10,7 @@
 There are 3 reference architectures available:
 - EDB-RA-1: 1 Primary, 1 barman, 1 pem
 - EDB-RA-2: 1 Primary, 2 standby's, 1 barman, 1 pem
-- EDB-RA-3: 1 Primary, 2 standby's, 1 barman, 1 pem, 3 PgBouncers
+- EDB-RA-3: 1 Primary, 2 standby's, 1 barman, 1 pem, 3 PgPool-II
 
 [EDB Reference Architectures](https://github.com/EnterpriseDB/edb-ref-archs/blob/main/edb-reference-architecture-codes/README.md)
 
